@@ -1,7 +1,7 @@
 scoring.QLQC30 <-
-function(X,id="",time=""){
+function(X,id="",time="",prefix="q"){
 
-items=paste("q",1:30,sep="")
+items=paste(prefix,1:30,sep="")
 
 if(length(which(is.element(items,colnames(X))))<30){
 stop("At least one item is missing: items must be named q1 to q30");
